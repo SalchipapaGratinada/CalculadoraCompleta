@@ -1,0 +1,153 @@
+@font-face {
+    font-family: Peralta;
+    src: url(Fuente/Peralta-Regular.ttf);    
+}
+
+
+.table-wrapper {
+    width: 14%;
+    height: 140px; /* Altura de ejemplo */
+    overflow: auto;
+    margin-top: -25rem;
+    margin-left: 60rem;
+}
+  
+.table-wrapper table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+  
+.table-wrapper table thead {
+    position: -webkit-sticky; /* Safari... */
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+  
+.table-wrapper table thead th,
+.table-wrapper table tbody td {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: maroon;
+    text-align: center;
+}
+
+
+/*  */
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+}
+body{
+    margin: 0;
+    background-color: maroon;
+}
+.titulo{
+    text-align: center;
+    font-family: cursive;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: darkcyan;
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+}
+
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 32px;
+    font-size: 1.5em;
+    border: none;
+    background-color: darkcyan;
+    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
+}
+button:active {
+    background-color: #fff ;
+}
+button:focus{
+    outline: none;
+}
+.col{
+    grid-column: span 2;
+}
+.display{
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #363636;
+    border-radius: 32px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 10px #00000033;
+}
+#valor-actual{
+    font-size: 3em;
+}
+#valor-anterior{
+    font-size: 3.5em;
+}
+
+/* celular Pequeño */
+@media screen and (max-width: 360px){
+    
+}
+
+/* Celular Iphone XR */
+@media screen and (max-width: 414px) {
+    .table-wrapper {
+        margin-top: -1rem;
+        margin-left: 5rem;
+
+    }
+    .container{
+        height: 70vh;
+        margin-right: 100rem;
+    }
+    .titulo{
+        font-size:17px;
+    }
+
+    .table-wrapper table thead {
+      align-items: center;
+    }
+    
+    
+}
+
+/* Movil/Celular Grande */
+@media screen and (max-width: 720px){
+   
+    
+}
+
+/* iPad Air */
+@media screen and (max-width: 820px){
+    
+} 
+
+/* Surface Pro 7 */
+@media screen and (max-width: 912px){
+    
+}
+/* Galaxy Fold */
+@media screen and (max-width: 280px){
+    
+}
+
+
